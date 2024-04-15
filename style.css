@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --color-light: #ffffff;
+    --color-blue: #6959c5;
+    --transition: .5s
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-blue);
+    font-weight: 900;
+    transition: var(--transition);
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn{
+    background-color: var(--color-blue);
+    color: var(--color-light);
+    border: 2px solid var(--color-blue);
+    padding: 8px 3.5rem;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: var(--color-blue);
+}
+
+.inicial{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(praia.jpg),linear-gradient(rgba(5, 4, 4, 0.786),rgba(5, 3, 3, 0.582));
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
